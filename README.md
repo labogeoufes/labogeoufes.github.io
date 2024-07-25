@@ -6,5 +6,5 @@ Thiago Correa dos Santos
 ## Designer:
 Larissa Marques Freguete
 ## Editor/ Reviser
-Thiago Correa dos Santos
+Thiago Correa dos Santos </br>
 P.S.: This website was built upon the Mobirise platform with further customizations.
