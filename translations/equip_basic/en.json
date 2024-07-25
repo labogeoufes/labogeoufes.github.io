@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Basic Instruments",
+  "equip_title": "Basic Instruments for Lab Analyzes",
+  "equip_desc":"Sieve Shaker: The particle size sieve shaker is a tool for determining the size distribution of sedimentary particles. Its agitation helps the sediment pass through a series of sieves with progressively smaller openings. This allows the construction of a granulometric curve of the analyzed sediment.\n\n Stemi 508 + AxioCam 208 Color: This is a basic equipment for analyzing foraminifera and morphoscopic analysis of grains and mineralogical identification, with an image capture system.\n\n SPM Filter: The suspended particulate matter (MPS) filtration kit is used to separate solid particles (organic and inorganic) from dissolved particles and colloids by passing water through a membrane filter (fiberglass or cellulose) with a porosity of 0.45 µm micrometers.\n\n CATER: The Erodibility Testing Chamber (CATER, in Portuguese) consists of a cylindrical polymetric structure designed to determine erodibility and sediment settling speed, where turbulence is induced by a propeller rotating at programmable speeds.\n\n Freeze Dryer/Lyophilizer LJJ02: This equipment allows the drying of material without the need for heating. The physical principle involved in freeze-drying is sublimation, which is the direct transition from the solid to the gaseous state, without passing through the liquid state.\nMagnetic Stirrer + Hotplate: A magnetic stirrer with a hotplate is used for mixing solutions and suspensions homogeneously while allowing temperature control.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

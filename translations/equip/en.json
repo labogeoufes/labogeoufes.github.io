@@ -1,0 +1,23 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "title": "EQUIPMENT",  
+  "din-mar":"LAB INSTRUMENTS",
+  "geo-mar":"FIELD INSTRUMENTS", 
+  "dinmar_equip01_title":"BASIC INSTRUMENTS",
+  "dinmar_equip02_title":"MASTERSIZER 3000E WITH HYDRO EV",
+  "dinmar_equip03_title":"XRF-S1 TITAN",
+  "geomar_equip01_title":"SEDIMENT SAMPLERS",
+  "geomar_equip02_title":"ACOUSTIC PROFILERS",
+  "geomar_equip03_title":"SIDE SCAN SONARS",
+  "geomar_equip04_title":"MULTIBEAM ECOSOUNDER",
+  "geomar_equip05_title":"BOTTOM IMAGING",
+  "geomar_equip06_title":"SUB-BOTTOM SEISMIC PROFILERS",
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

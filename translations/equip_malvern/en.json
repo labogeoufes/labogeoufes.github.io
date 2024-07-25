@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Mastersizer 3000E with Hydro EV",
+  "equip_title": "Mastersizer 3000E + Hydro EV",
+  "equip_desc":"The laser granulometer uses the diffraction of the laser ray  to measure the size of particles in a solution and their respective ocurrence frequency, which allows the construction of a granulometric curve of grain size distribution of the analyzed sediment.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

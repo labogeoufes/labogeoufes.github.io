@@ -1,0 +1,17 @@
+{
+  "about_nav": "Sobre Nós",
+  "research_nav" : "Áreas de Pesquisa",
+  "projects_nav" : "Projetos",
+  "team_nav" : "Equipe",
+  "equip_nav" : "Equipamentos",
+  "papers_nav" : "Publicações",
+  "news_nav" : "Notícias",
+  "crum1_text": "Início",
+  "crum2_text": "Equipamentos",
+  "crum3_text": "Equipamentos Básicos",
+  "equip_title": "Equipamentos Básicos para Análises Laboratoriais",
+  "equip_desc":"Agitador de Peneiras: O agitador de peneiras granulométricas é uma ferramenta para determinar a distribuição de tamanhos de partículas sedimentares. Sua agitação auxilia na passagem do sedimento por meio de uma série de peneiras com aberturas progressivamente menores. Isso permite a construção de uma curva granulométrica do sedimento analisado.\n\n Stemi 508 + AxioCam 208 Color: Equipamento básico para análise dos foraminíferos e análise morfoscópica de grãos e identificação mineralógica, com sistema de captura de imagem e software. \n\n Bombas a vácuo e kit de filtragem de MPS: O kit de filtragem de material particulado em suspensão (MPS) é utilizado para separar partículas sólidas (orgânicas e inorgânicas) das partículas dissolvidas e colóides através da passagem da água por uma membrana filtrante (de fibra de vidro ou de celulose) de porosidade de 0,45 µm micrômetros.\n\n CATER: A Câmara para Teste de Erodibilidade (CATER), consiste em uma estrutura polimétrica cilíndrica, com design projetado para atuar na determinação de erodibilidade e velocidade de decantação de sedimento, onde a turbulência é induzida por uma hélice girando a velocidades programáveis.\n\n Liofilizador LJJ02: Liofilizador é um equipamento que permite a secagem de materiais sem a necessidade de aquecê-los. O princípio físico envolvido na liofilização é a sublimação, que é a passagem direta do estado sólido para o gasoso, sem a passagem pelo estado líquido.\n\n Agitador magnético com aquecimento: Um agitador magnético com aquecimento é um equipamento de laboratório utilizado para misturar soluções e suspensões de forma homogênea, ao mesmo tempo em que permite o controle de temperatura.", 
+  "partners": "Parcerias",
+  "media_text": "Conecte-se com nossas redes sociais"
+  
+}

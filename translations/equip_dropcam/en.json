@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Bottom Imaging",
+  "equip_title": "Drop Camera Frame",
+  "equip_desc":"High resolution seabed filming system. This system comes coupled with two cameras: one oriented at nadir for direct recording of the bottom, and another in panoramic view, attached to the side of the structure. \n\n This is a direct seabed investigation method for generating ground truth for validating geophysical survey data.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

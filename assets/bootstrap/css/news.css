@@ -1,0 +1,59 @@
+/*PAGINA NOTÍCIA */
+.row{
+  align-items: flex-start !important;
+}
+.text-wrapper{
+ padding-top: 0px !important;
+ margin-top: 15px !important;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container-img {
+position: relative;
+width: 60%!important;
+margin: auto;
+
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0.7em !important;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 470px) {
+  #articleTitle {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}

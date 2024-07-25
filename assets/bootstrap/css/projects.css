@@ -1,0 +1,10 @@
+/*PAGINA PROJETOS */
+
+.proj_text{
+  position: absolute;
+  bottom: 10px;
+}
+.content{
+  background: #c2dce3;
+  border-radius: 10px;
+}

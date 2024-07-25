@@ -1,0 +1,17 @@
+{
+  "about_nav": "Sobre Nós",
+  "research_nav" : "Áreas de Pesquisa",
+  "projects_nav" : "Projetos",
+  "team_nav" : "Equipe",
+  "equip_nav" : "Equipamentos",
+  "papers_nav" : "Publicações",
+  "news_nav" : "Notícias",
+  "crum1_text": "Início",
+  "crum2_text": "Equipamentos",
+  "crum3_text": "Perfiladores Acústicos",
+  "equip_title": "Perfiladores Acústicos",
+  "equip_desc":"É um sistema acústico ativo e é utilizado para mapear o fundo oceânico através de emissão e recepção de pulsos acústicos com o registro do intervalo de tempo entre estas duas ações permitindo o cálculo de distância viajada pela onda.", 
+  "partners": "Parcerias",
+  "media_text": "Conecte-se com nossas redes sociais"
+  
+}

@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Acoustic Profilers",
+  "equip_title": "Acoustic Profilers",
+  "equip_desc":"ADCP Seaguard II: The SeaGuard II (Acoustic Doppler Current Profiler) measures currents and can be coupled with additional wave direction, oxygen, conductivity, turbidity and temperature sensors. \n\n ADP River Surveyor M9: This system was projected for measuring flow flux in rivers and open channels.\n\n CTD Swift+: Standard instrument used to obtain depth, conductivity (salinity) and temperature. In addition to these 3 main parameters, this instrument also provides sound density and speed values.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

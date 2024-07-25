@@ -1,0 +1,23 @@
+{
+  "about_nav": "Sobre Nós",
+  "research_nav" : "Áreas de Pesquisa",
+  "projects_nav" : "Projetos",
+  "team_nav" : "Equipe",
+  "equip_nav" : "Equipamentos",
+  "papers_nav" : "Publicações",
+  "news_nav" : "Notícias",
+  "title": "EQUIPMENTOS",  
+  "din-mar":"EQUIPAMENTOS DE LABORATÓRIO",
+  "geo-mar":"EQUIPAMENTOS DE CAMPO", 
+  "dinmar_equip01_title":"EQUIPAMENTOS BÁSICOS",
+  "dinmar_equip02_title":"MASTERSIZER 3000E COM HYDRO EV",
+  "dinmar_equip03_title":"XRF-S1 TITAN",
+  "geomar_equip01_title":"AMOSTRADORES DE SEDIMENTOS",
+  "geomar_equip02_title":"PERFILADORES ACÚSTICOS",
+  "geomar_equip03_title":"SONARES DE VARREDURA LATERAL",
+  "geomar_equip04_title":"ECOBATÍMETRO MULTIFEIXE",
+  "geomar_equip05_title":"IMAGEAMENTO DO FUNDO",
+  "geomar_equip06_title":"PERFILADORES SÍSMICOS DE SUBFUNDO",
+  "partners": "Parcerias",
+  "media_text": "Conecte-se com nossas redes sociais"  
+}

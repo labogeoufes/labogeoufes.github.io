@@ -1,0 +1,11 @@
+/* SEÇÃO PARA EQUIPAMENTOS ## */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.content > div{
+  height: 100%; 
+  display: flex;
+   align-items: center;
+}

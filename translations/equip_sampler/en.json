@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Sediment Samplers",
+  "equip_title": "Sediment Samplers",
+  "equip_desc":"Sediment samplers are used to collect bottom sediment in order to analyze its textural characteristics, sedimentary structures and interpret the associated depositional systems.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

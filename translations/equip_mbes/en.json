@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Multibeam Echosounder",
+  "equip_title": "R2 Sonic 2024 Multibeam",
+  "equip_desc":"It is active acoustic sensor. The multibeam sonar emits fan-shaped acoustic wave beams, which allows greater spatial coverage. This system operates at frequencies of 170-450 kHz and allows recording the wave return intensity (backscatter). \n This system allows the mapping of underwater features and definition of bottom types with the additional use of backscatter data.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

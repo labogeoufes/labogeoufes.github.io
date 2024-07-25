@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "Side Scan Sonars",
+  "equip_title": "Side Scan Sonars",
+  "equip_desc":"Side scan sonar  is an active acoustic system and is used to map the ocean floor through the emission and reception of acoustic pulses with the recording of the time interval between these two actions allowing the calculation of the wave traveled distance.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

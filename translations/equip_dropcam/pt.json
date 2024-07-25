@@ -1,0 +1,17 @@
+{
+  "about_nav": "Sobre Nós",
+  "research_nav" : "Áreas de Pesquisa",
+  "projects_nav" : "Projetos",
+  "team_nav" : "Equipe",
+  "equip_nav" : "Equipamentos",
+  "papers_nav" : "Publicações",
+  "news_nav" : "Notícias",
+  "crum1_text": "Início",
+  "crum2_text": "Equipamentos",
+  "crum3_text": "Imageamento do Fundo",
+  "equip_title": "Estutura Drop Câmera",
+  "equip_desc":"Sistema de filmagem do fundo marinho em alta resolução. Este sistema vem acoplada com duas câmeras: uma orientada a nadir para o registro direto do fundo, e outra na visão panorâmica, acoplada na lateral da estrutura. \n\n Este é um método direto de investigação do fundo marinho para geração de verdade de campo para validação dos dados de levantamento geofísicos.", 
+  "partners": "Parcerias",
+  "media_text": "Conecte-se com nossas redes sociais"
+  
+}

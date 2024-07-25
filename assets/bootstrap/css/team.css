@@ -1,0 +1,10 @@
+/*PAGINA EQUIPE */
+
+
+@media (max-width: 470px) {
+  #myBtnContainer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}

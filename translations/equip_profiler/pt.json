@@ -1,0 +1,17 @@
+{
+  "about_nav": "Sobre Nós",
+  "research_nav" : "Áreas de Pesquisa",
+  "projects_nav" : "Projetos",
+  "team_nav" : "Equipe",
+  "equip_nav" : "Equipamentos",
+  "papers_nav" : "Publicações",
+  "news_nav" : "Notícias",
+  "crum1_text": "Início",
+  "crum2_text": "Equipamentos",
+  "crum3_text": "Perfiladores Acústicos",
+  "equip_title": "Perfiladores Acústicos",
+  "equip_desc":"ADCP Seaguard II: O SeaGuard II (Acoustic Doppler Current Profiler) mede correntes e pode ser acoplado com sensores adicionais de direção de onda, oxigênio, condutividade, turbidez e temperatura. \n\n ADP River Surveyor M9: Este sistema foi projetado com o objetivo de realizar as medições de vazão em vários tipos de aplicação em rios e canais abertos.\n\nCTD Swift+: Instrumento-padrão utilizado para a obtenção de profundidade, condutividade (salinidade) e temperatura. Adicionalmente a estes 3 principais parâmetros, este instrumento também fornece valores de densidade e velocidade do som.", 
+  "partners": "Parcerias",
+  "media_text": "Conecte-se com nossas redes sociais"
+  
+}

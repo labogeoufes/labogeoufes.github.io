@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    #prevArrow, #nextArrow {
+      position: absolute;
+      bottom: 40%;
+    }
+  }

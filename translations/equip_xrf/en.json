@@ -1,0 +1,16 @@
+{
+  "about_nav": "About Us",
+  "research_nav" : "Research Areas",
+  "projects_nav" : "Projects",
+  "team_nav" : "Team",
+  "equip_nav" : "Instruments",
+  "papers_nav" : "Publications",
+  "news_nav" : "News",
+  "crum1_text": "Home",
+  "crum2_text": "Instruments",
+  "crum3_text": "XRF-S1 Titan",
+  "equip_title": "XRF-S1 Titan",
+  "equip_desc":"The X-ray fluorescence analyzer (XRF) has the ability to quantify and qualify, in a non-destructive way, elements through the emission of an x-ray beam that interacts with the atoms in the sample.", 
+  "partners":"Partners",
+  "media_text":"Contact Us"
+}

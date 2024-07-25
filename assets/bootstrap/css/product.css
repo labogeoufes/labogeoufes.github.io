@@ -1,0 +1,120 @@
+
+/* SEÇÃO PARA EQUIPAMENTOS ## */
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  margin-top: 50px;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container-img {
+  position: relative;  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0.08em !important;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row-thumb{
+  display: flex;
+  justify-content: center;
+}
+
+.row-thumb:after {
+  content: "" !important;
+  display: table!important;
+  clear: both !important;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;  
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  margin-top: -64px ;
+  margin-bottom: 64px ;
+  list-style: none;
+  background-color: #eee;
+  align-items: right;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
+
