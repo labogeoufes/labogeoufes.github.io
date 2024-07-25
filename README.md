@@ -7,4 +7,5 @@ Thiago Correa dos Santos
 Larissa Marques Freguete
 ## Editor/ Reviser
 Thiago Correa dos Santos </br>
+</br>
 P.S.: This website was built upon the Mobirise platform with further customizations.
