@@ -9,3 +9,7 @@
   display: flex;
    align-items: center;
 }
+.container-fluid{
+  display: flex !important; 
+  justify-content: center !important; 
+ }
