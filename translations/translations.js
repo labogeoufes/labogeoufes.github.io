@@ -31,7 +31,7 @@ async function setLanguage(page, lang) {
 
 // Set default language on page load
 document.addEventListener("DOMContentLoaded", () => {
-  let page = window.location.pathname.split(".")[0];
+  let page = window.location.pathname.split(".")[0].replace("/","");
   let lang = localStorage.getItem("language");
   setLanguage(page, lang);
 });
