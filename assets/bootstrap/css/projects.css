@@ -4,3 +4,11 @@
   border-radius: 10px;
   height: 100% !important;
 }
+/* .sect_title{
+  position: absolute;
+  top: 10px;
+} */
+ .container-fluid{
+  display:flex; 
+  justify-content: center; 
+ }

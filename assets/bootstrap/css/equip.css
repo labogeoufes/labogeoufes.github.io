@@ -24,3 +24,7 @@
     height: 470px;
   }
 }
+.container-fluid{
+  display: flex !important; 
+  justify-content: center !important; 
+ }
