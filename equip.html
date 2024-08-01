@@ -37,7 +37,7 @@
   <section data-bs-version="5.1" class="menu menu1 cid-u9oengHv9p" once="menu" id="menu1-4d">
 
     <nav class="navbar navbar-dropdown navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container-fluid container-navbar">
         <div class="navbar-brand">
           <span class="navbar-logo">
             <a href="index.html">
@@ -46,17 +46,7 @@
           </span>
 
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
-          data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse my-navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
             <li class="nav-item"><a class="nav-link link text-white text-primary display-4 " href="about.html"
                 data-translate="about_nav"></a></li>
@@ -74,22 +64,34 @@
                 data-translate="news_nav"></a></li>
           </ul>
         </div>
-        <div class="language">
-          <div class="language-selected">
-            <span class="fi fi-br"></span>
+        <div class="action-buttons">
+          <button class="my-navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="language">
+            <div class="language-selected">
+              <span class="fi fi-br"></span>
+            </div>
+            <ul>
+              <li>
+                <a href="javascript:void(0);" class="br" onclick="setLanguage('equip', 'pt')">
+                  <span class="fi fi-br"></span> <span class="speech-pt">PT</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="en" onclick="setLanguage('equip', 'en')">
+                  <span class="fi fi-us"></span> <span class="speech-en">EN</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              <a href="javascript:void(0);" class="br" onclick="setLanguage('equip', 'pt')">
-                <span class="fi fi-br"></span> <span class="speech-pt">PT</span>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0);" class="en" onclick="setLanguage('equip', 'en')">
-                <span class="fi fi-us"></span> <span class="speech-en">EN</span>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
@@ -193,25 +195,42 @@
     </div>
 
     <script rel="text/javascript">
+      function showNavbar() {
+        let navbar = document.getElementById("navbarSupportedContent");
+        console.log(navbar)
+        console.log("antes:", navbar.style)
+        // debugger
+        if (navbar.style.display == "flex") {
+          navbar.style.display = "none"
+        }
+        else {
+          navbar.style.display = "flex"
+        }
+        console.log("depois:", navbar)
+        console.log("depois:", navbar.style)
+      }
+
       // Função que será chamada quando o tamanho da tela mudar
-      // function onResize() {
-      //   var larguraTela = window.innerWidth;
-      //   var alturaTela = window.innerHeight;
-      //   let imgs = document.querySelectorAll(".img-equip")
-      //   if (window.innerWidth < 500) {
-      //     imgs.forEach(item => {
-      //       item.classList.add("fixed-height")
-      //     })
-      //   }
-      //   else {
-      //     imgs.forEach(item => {
-      //       item.classList.remove("fixed-height")
-      //     })
-      //   }
-      // }
+      function onResize() {
+        var larguraTela = window.innerWidth;
+        var alturaTela = window.innerHeight;
+        console.log(larguraTela)
+        console.log("largura2:", window.screen.width)
+        // let imgs = document.querySelectorAll(".img-equip")
+        // if (window.innerWidth < 500) {
+        //   imgs.forEach(item => {
+        //     item.classList.add("fixed-height")
+        //   })
+        // }
+        // else {
+        //   imgs.forEach(item => {
+        //     item.classList.remove("fixed-height")
+        //   })
+        // }
+      }
 
       // Adiciona um listener para o evento de redimensionamento
-      // window.addEventListener("resize", onResize);
+      window.addEventListener("resize", onResize);
 
 
 
