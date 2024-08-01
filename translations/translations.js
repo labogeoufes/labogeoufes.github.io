@@ -1,5 +1,5 @@
 async function fetchTranslation(page, lang) {
-  const response = await fetch(`./translations/${page}/${lang}.json`); 
+  const response = await fetch(`./translations/${page}/${lang}.json`);
   const translations = await response.json();
   return translations;
 }
@@ -31,7 +31,7 @@ async function setLanguage(page, lang) {
 
 // Set default language on page load
 document.addEventListener("DOMContentLoaded", () => {
-  let page = window.location.pathname.split(".")[0];
+  let page = window.location.pathname.split(".")[0].replace("/", "");
   let lang = localStorage.getItem("language");
   setLanguage(page, lang);
 });

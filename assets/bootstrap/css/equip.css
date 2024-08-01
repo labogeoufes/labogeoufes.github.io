@@ -2,10 +2,25 @@
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  height: 100% !important;
 }
 .content > div{
   height: 100%; 
   display: flex;
    align-items: center;
+}
+
+.img-equip{
+  height: 15vw;
+}
+
+/* .fixed-height{
+  height: 470px;
+} */
+
+@media (max-width: 500px) {
+  .img-equip {
+    height: 470px;
+  }
 }
