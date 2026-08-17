@@ -196,7 +196,6 @@
             }
 
             var teamBaseWidth = 1400;
-            var _lastScale = null;
             var _resizeObserver = null;
 
             function scaleTeam() {
@@ -204,11 +203,6 @@
                 var outer = document.getElementById('team-outer');
                 if (!inner || !outer) return;
                 var scale = outer.offsetWidth / teamBaseWidth;
-
-                if (_lastScale !== null && Math.abs(scale - _lastScale) < 0.001) {
-                    return;
-                }
-                _lastScale = scale;
 
                 inner.style.transform = 'scale(' + scale + ')';
                 inner.style.transformOrigin = 'top left';
@@ -264,7 +258,7 @@
                     return '<div class="content ' + m.category + '">' +
                         '<div class="item features-image"><div class="item-wrapper"><div class="row">' +
                         '<div class="col-12 col-md-4"><div class="image-wrapper">' +
-                        '<img src="' + m.photo + '" alt="NO IMAGE">' +
+                        '<img src="' + m.photo + '" alt="NO IMAGE" onload="scheduleScaleTeam()">' +
                         degrees + emailBtn +
                         '</div></div>' +
                         '<div class="col"><div class="card-box">' +
