@@ -5,6 +5,11 @@
   justify-content: center;
   height: 100% !important;
   align-items: center;
+  background: #c2dce3;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .content a{
@@ -13,7 +18,9 @@
 }
 
 .img-equip{
-  height: 15vw;
+  height: 15vw !important ;
+  min-height: 80px !important ;
+  max-height: 200px !important ;
 }
 
 /* STYLING MENU ## */

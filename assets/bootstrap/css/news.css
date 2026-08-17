@@ -4,50 +4,75 @@
 }
 .text-wrapper{
  padding-top: 0px !important;
+ padding-left: 30px !important;
  margin-top: 15px !important;
 
 }
 
-/* Position the image container (needed to position the left and right arrows) */
+.image-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Slideshow container */
 .container-img {
-position: relative;
-width: 60%!important;
-margin: auto;
-
+  width: 60% !important;
+  margin: auto;
 }
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
+
+.slide-wrapper {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.container-img .img-equip {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Hide slides by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Dot indicators */
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0 4px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #666;
+  background-color: transparent;
   cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 1);
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  background-color: rgba(0, 0, 0, 0.2);
+.dot.active {
+  background-color: #666;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0.7em !important;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.dot:hover {
+  background-color: #999;
+  border-color: #999;
 }
 
 @media (max-width: 470px) {
@@ -55,6 +80,12 @@ margin: auto;
     flex-direction: column;
     align-items: center;
     display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-img {
+    width: 90% !important;
   }
 }
 

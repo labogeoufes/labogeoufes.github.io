@@ -5,12 +5,19 @@
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 1.25vw;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.05vw;
+  display: flex;
+  align-items: center;
+}
+
+.collapsible h3 {
+  flex: 1;
+  margin: 0;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -20,38 +27,142 @@ button.active, .collapsible:hover {
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
+  padding: 0 1.25vw;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 0.9vw;
   color: white;
-  float: right;
-  margin-left: 5px;
-  margin-top: -60px;
+  margin-left: 0.35vw;
+  flex-shrink: 0;
 }
 
 .collapsible.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
-.w-100{
-  margin: auto !important;
-}
-.display-5, .display-4 {
-  margin-top: 20px !important;
+.cid-u9o85bmQxG .container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 4.45vw;
+  padding-right: 4.45vw;
+  box-sizing: border-box;
 }
 
-a:hover {
+.cid-u9o85bmQxG .item-wrapper {
+  padding: 1vw 0;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+  height: 28vw;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.cid-u9o85bmQxG .item-wrapper .row.align-items-start {
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: -120px;
+}
+
+.cid-u9o85bmQxG .item-wrapper .row > .image-wrapper {
+  flex: 0 0 32% !important;
+  max-width: 32% !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.cid-u9o85bmQxG .item-wrapper .row > [id="titlePapers"] {
+  flex: 0 0 68% !important;
+  max-width: 68% !important;
+  padding-left: 1.5vw !important;
+  padding-right: 1vw !important;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.cid-u9o85bmQxG .col-lg-6 h5 {
+  font-size: 1.3vw !important;
+  line-height: 1.6vw !important;
+  margin-top: 2vw !important;
+  margin-bottom: 0.5vw !important;
+}
+
+.cid-u9o85bmQxG [data-translate*="author_paper"] {
+  font-size: 1.1vw !important;
+  line-height: 1.5vw !important;
+  margin-top: 0.5vw !important;
+  margin-bottom: 0.5vw !important;
+}
+
+.cid-u9o85bmQxG [data-translate*="journ_paper"] {
+  font-size: 1.1vw !important;
+  line-height: 1.5vw !important;
+  margin-top: 0.5vw !important;
+  margin-bottom: 0.5vw !important;
+}
+
+.cid-u9o85bmQxG .display-7 {
+  font-size: 1vw !important;
+  line-height: 1.4vw !important;
+}
+
+.cid-u9o85bmQxG .content {
+  padding: 0 1.86vw;
+}
+
+.w-100 {
+  display: block;
+  margin: auto !important;
+  width: 100% !important;
+  height: auto;
+  object-fit: contain;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -1vw;
+}
+
+.cid-u9o85bmQxG .image-wrapper .w-100 {
+  width: 100% !important;
+  height: 24vw !important;
+  object-fit: contain;
+  margin-top: 0.5vw !important;
+  margin-bottom: 0.5vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.cid-u9o85bmQxG .display-5, .cid-u9o85bmQxG .display-4 {
+  margin-top: 1.5vw !important;
+}
+
+[data-translate*="author_paper"] {
+  font-size: 1.1vw;
+}
+
+[data-translate*="journ_paper"] {
+  font-size: 1.1vw;
+}
+
+.cid-u9o85bmQxG a:hover {
   color: #82ead5 !important;
 }
 
 @media (max-width: 991px) {
   #titlePapers {
-    padding-inline: 50px;
-    margin-block: 10px;
+    padding-inline: 3.5vw;
+    margin-block: 0.7vw;
   }
 }
 

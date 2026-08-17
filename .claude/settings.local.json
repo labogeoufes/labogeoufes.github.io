@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(files=\"about.html team.html research.html projects.html equip.html equip_basic.html equip_dropcam.html equip_malvern.html equip_mbes.html equip_profiler.html equip_sampler.html equip_sbp.html equip_sss.html equip_xrf.html papers.html news.html\")",
+      "Bash(sed -i 's/ <span class=\"\"speech-pt\"\">PT<\\\\/span>//g; s/ <span class=\"\"speech-en\"\">EN<\\\\/span>//g' $files)",
+      "Bash(sed -i 's|<\\\\/span>PT<\\\\/div>|<\\\\/span><\\\\/div>|g' $files)",
+      "Bash(grep -n \"speech-pt\\\\|speech-en\\\\|>PT<\\\\|>EN<\" *.html)"
+    ]
+  }
+}

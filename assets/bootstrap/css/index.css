@@ -1,5 +1,6 @@
 /*landing page */
 .mbr-fullscreen{
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }
@@ -11,34 +12,84 @@
   min-height: 100%;
 }
 
-.speech{
+.speech {
   width: 100%;
   position: absolute;
   top: 20px;
+  z-index: 10;
 }
 
-.speech div{
+.speech div {
   display: flex;
-  width: 100px;
-  gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 40px;
-  padding: 6px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-}
-.speech-pt{
-  color: #000;
-  font-size:small;
-}
-.speech-en{
-  color: #000;
-  font-size:small;
+  gap: 8px;
+  margin-left: clamp(16px, 3vw, 40px);
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  width: auto;
 }
 
-.br:hover, .en:hover{
-  opacity: 0.7;
-  border-radius: 5px;
-  background-color: #ccc;
+.speech a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(22px, 2.5vw, 32px);
+  height: clamp(22px, 2.5vw, 32px);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  transition: border-color 0.2s, background 0.2s;
+  padding: 0;
+}
+
+.speech a:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 1;
+}
+
+.speech a .fi {
+  width: clamp(18px, 2.2vw, 28px);
+  height: clamp(18px, 2.2vw, 28px);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.speech-pt,
+.speech-en {
+  display: none;
+}
+
+/* Hero content — absolutely positioned, scales with viewport */
+.index-hero-content {
+  position: absolute;
+  left: 4vw;
+  bottom: 12%;
+  top: auto;
+  transform: none;
+  margin: 0 !important;
+  width: 52vw;
+  padding-right: clamp(16px, 2vw, 40px);
+}
+
+/* Fluid title — max-width in em forces 2-line wrap at every font size */
+.index-hero-content h1 {
+  font-size: clamp(26px, 5vw, 72px) !important;
+  line-height: 1.15 !important;
+  max-width: 8em;
+}
+
+/* Fluid description — max-width in em forces 2-line wrap at every font size */
+.index-hero-content p {
+  font-size: clamp(13px, 1.4vw, 20px) !important;
+  line-height: 1.6 !important;
+  max-width: 28em;
+}
+
+/* Fluid button */
+.index-hero-content .btn {
+  font-size: clamp(12px, 1.1vw, 17px) !important;
+  padding: clamp(6px, 0.8vw, 12px) clamp(14px, 1.8vw, 28px) !important;
 }

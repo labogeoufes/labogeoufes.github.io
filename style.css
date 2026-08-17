@@ -5,6 +5,8 @@
 }
 html {
   font-size: 62.5%;
+  overflow-y: scroll; /* fallback: forces scrollbar always visible */
+  scrollbar-gutter: stable;
 }
 *:not(i) {
   font-family: "Poppins", sans-serif;
@@ -22,7 +24,7 @@ html {
   position: fixed;
   width: 100%;
   height: 60px;
-  padding: 0 clamp(16px, 4vw, 60px) 0 clamp(8px, 2vw, 28px);
+  padding: 0 clamp(16px, 4vw, 60px) 0 clamp(4px, 0.8vw, 12px);
   background: rgba(53, 53, 53, 0.5);
   z-index: 1002;
   display: flex;
@@ -43,9 +45,10 @@ nav {
   gap: clamp(8px, 1.2vw, 22px);
   margin-bottom: 0;
   align-items: center;
+  text-align: center;
 }
 nav a {
-  font-size: 2rem;
+  font-size: 2.8rem;
   text-decoration: none;
 }
 #logo {
@@ -61,7 +64,7 @@ nav a {
 
 nav ul a {
   color: #ffffff !important;
-  font-size: clamp(13px, 1.3vw, 16px) !important;
+  font-size: clamp(15px, 1.5vw, 18px) !important;
   font-weight: 600 !important;
   line-height: 1.2 !important;
   white-space: nowrap;
@@ -105,6 +108,12 @@ nav ul li a:active {
   color: #b0b0b0 !important;
 }
 
+#nav-bar li {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
 section#home {
   height: 100vh;
   display: grid;
@@ -120,6 +129,18 @@ h1 {
   left: 0;
 }
 .image-block img{
+  object-position: center 36%;
+}
+
+.image03 {
+  height: 40vh !important;
+  overflow: hidden;
+}
+
+.image03 img {
+  height: 40vh !important;
+  width: 100% !important;
+  object-fit: cover;
   object-position: center 36%;
 }
 .row {
@@ -249,6 +270,11 @@ h1 {
   gap: 0;
 }
 
+/* Override Jost font-family from mbr-additional.css */
+.display-1, .display-2, .display-4, .display-5, .display-7, .display-8 {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* About page — 4-column checkerboard gallery */
 .about-gallery {
   display: grid;
@@ -265,9 +291,12 @@ h1 {
 }
 .about-gallery img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center;
   display: block;
+  will-change: transform;
+  z-index: 1;
 }
 .about-gallery .gallery-empty {
   display: flex !important;
@@ -352,7 +381,7 @@ h1 {
     display: block;
     padding: 12px 0 12px 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    font-size: 16px !important;
+    font-size: 18px !important;
     border-left: 3px solid transparent;
     transition: color 0.2s ease, border-left-color 0.2s ease, padding-left 0.2s ease;
   }
@@ -430,8 +459,223 @@ h1 {
 
 #myBtnContainer {
   display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+/* Team pagination */
+#team-pagination {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+#team-pagination button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #232323;
+  padding: 4px 10px;
+  transition: color 0.2s;
+}
+
+#team-pagination button:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+#team-pagination button:not(:disabled):hover {
+  color: #666;
+}
+
+#team-page-info {
+  font-size: 1rem;
+  color: #232323;
+}
+
+/* Project pagination */
+#proj-pagination {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+#proj-pagination button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #232323;
+  padding: 4px 10px;
+  transition: color 0.2s;
+}
+
+#proj-pagination button:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+#proj-pagination button:not(:disabled):hover {
+  color: #666;
+}
+
+#proj-page-info {
+  font-size: 1rem;
+  color: #232323;
+}
+
+/* Projects card spacing */
+.cid-u9s2pGJ9pX .content h2 {
+  margin-bottom: 0;
+  font-size: 1.3vw !important;
+  line-height: 1.5;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.cid-u9s2pGJ9pX .proj_text {
+  margin-top: 2.5vw;
+  font-size: 1.28vw;
+  width: 100%;
+  text-align: left;
+}
+
+.cid-u9s2pGJ9pX .proj_text p {
+  font-size: 1.28vw !important;
+  line-height: 1.5;
+  margin-bottom: 0.37vw;
+}
+
+/* Portfolio Gallery Grid */
+.cid-u9s2pGJ9pX .row::after {
+  display: none;
+  content: none;
+}
+
+.cid-u9s2pGJ9pX .row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 42vw));
+  gap: 1.86vw;
+  align-items: start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cid-u9s2pGJ9pX .column {
+  display: none;
+  float: none !important;
+}
+
+.cid-u9s2pGJ9pX .column.show {
+  display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.cid-u9s2pGJ9pX .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: #c2dce3;
+  border-radius: 0.74vw;
+  padding: 2.23vw 1.86vw;
+  height: 34vw;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (hover: hover) {
+  .cid-u9s2pGJ9pX .content:hover {
+    box-shadow: 2px 2px 6px rgba(194,220,227,0.8), -1px -1px 3px rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+  }
+}
+
+@media (hover: hover) {
+  .cid-u9mOFp3EiY .content:hover {
+    box-shadow: 2px 2px 6px rgba(194, 220, 227, 0.8), -1px -1px 3px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 576px) {
+  .cid-u9s2pGJ9pX .row {
+    grid-template-columns: minmax(0, 50vw);
+    grid-auto-rows: 36vw;
+  }
+  .cid-u9s2pGJ9pX .column.show {
+    height: auto;
+  }
+  .cid-u9s2pGJ9pX .content {
+    height: 36vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .cid-u9s2pGJ9pX .row {
+    grid-template-columns: minmax(0, 42vw);
+    grid-auto-rows: 30vw;
+  }
+  .cid-u9s2pGJ9pX .content {
+    height: 30vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .cid-u9s2pGJ9pX .row {
+    grid-template-columns: minmax(0, 35vw);
+    grid-auto-rows: 25vw;
+  }
+  .cid-u9s2pGJ9pX .content {
+    height: 25vw;
+  }
+}
+
+/* Filter buttons */
+/* Projects content card wrapper */
+.proj-content-card {
+  background-color: #ffffff;
+  border-radius: 0.74vw;
+  padding: 2.23vw;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* projects.html filterDropdownWrapper behaves like original #myBtnContainer */
+.cid-u9s2pGJ9pX #filterDropdownWrapper,
+.cid-u9mOFp3EiY #filterDropdownWrapper {
+  position: relative;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+#myBtnContainer .btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#myBtnContainer .btn:hover {
+  background-color: #ddd;
+}
+
+#myBtnContainer .btn.active {
+  background-color: #232323;
+  color: #fff;
 }
 
 #myBtnContainer .btn {
@@ -459,7 +703,7 @@ h1 {
 
 .cid-u9ocYyZ7iZ .item-wrapper .row {
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -488,11 +732,12 @@ h1 {
 .cid-u9ocYyZ7iZ .image-wrapper p {
   width: 100%;
   text-align: left;
+  font-size: 1rem;
 }
 
 .cid-u9ocYyZ7iZ .image-wrapper button#contact {
   display: flex;
-  margin: 0 auto;
+  margin: 14px auto 0;
   width: 100px !important;
   height: 29px !important;
   min-width: 100px !important;
@@ -508,7 +753,7 @@ h1 {
 }
 
 .cid-u9ocYyZ7iZ .image-wrapper button#contact a {
-  font-size: 1.2rem;
+  font-size: 12px;
   letter-spacing: 0.05em;
 }
 
@@ -518,13 +763,13 @@ h1 {
 }
 
 .cid-u9ocYyZ7iZ .card-box {
-  padding: 0 0 0 2rem !important;
+  padding: 0 0 0 28px !important;
 }
 
 /* Divider between team entries */
 .cid-u9ocYyZ7iZ .content + .content {
   border-top: 1px solid #e0e0e0;
-  padding-top: 1rem;
+  padding-top: 14px;
 }
 
 @media (max-width: 767px) {
@@ -544,52 +789,166 @@ h1 {
   }
 }
 
-@media (max-width: 990px) {
-  #filterDropdownWrapper {
-    margin-bottom: 1.5rem;
-  }
+#filterDropdownWrapper {
+  margin-bottom: 1.5rem;
+}
 
-  #filterDropdownToggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-  }
+#filterDropdownToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
 
-  #filterDropdownToggle .fa-chevron-down {
-    transition: transform 0.2s ease;
-  }
+#filterDropdownToggle .fa-chevron-down {
+  transition: transform 0.2s ease;
+}
 
-  #filterDropdownToggle.open .fa-chevron-down {
-    transform: rotate(180deg);
-  }
+#filterDropdownToggle.open .fa-chevron-down {
+  transform: rotate(180deg);
+}
 
-  #myBtnContainer {
-    display: none;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    background: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 1px solid #ddd;
-    flex-direction: column;
-    gap: 0;
-  }
+#myBtnContainer {
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  flex-direction: column;
+  gap: 0;
+}
 
-  #myBtnContainer.open {
-    display: flex;
-  }
+#myBtnContainer.open {
+  display: flex;
+}
 
-  #myBtnContainer .btn {
-    border-radius: 0;
-    border-bottom: 1px solid #eee;
-    width: 200px;
-  }
+#myBtnContainer .btn {
+  border-radius: 0;
+  border-bottom: 1px solid #eee;
+  width: 200px !important;
+}
 
-  #myBtnContainer .btn:last-child {
-    border-bottom: none;
-  }
+#myBtnContainer .btn:last-child {
+  border-bottom: none;
+}
+
+/* equip subpages features14 */
+.cid-u9nm1B10lh {
+  padding-top: 18px !important;
+}
+
+.cid-u9nm1B10lh .breadcrumb {
+  padding-left: 2rem;
+}
+
+.col-md-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42% !important;
+  max-width: 42% !important;
+}
+
+.col-md-7 {
+  flex: 0 0 56% !important;
+  max-width: 56% !important;
+}
+
+.row.no-gutters {
+  justify-content: flex-start;
+  margin-left: -5rem;
+}
+
+/* Hide old prev/next arrows */
+.prev, .next {
+  display: none !important;
+}
+
+.container-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.slide-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.slide-arrow {
+  background: rgba(0, 0, 0, 0.35);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0.85rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.slide-arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.mySlides img {
+  height: 380px !important;
+}
+
+.font-weight-bold {
+  font-size: 1.6rem;
+}
+
+.product-description p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0.75rem 8vw;
+  margin: 0;
+  background-color: transparent;
+}
+
+.breadcrumb li {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.breadcrumb li + li::before {
+  content: "/";
+  padding: 0 0.5rem;
+  color: #aaa;
+}
+
+.breadcrumb li a {
+  color: #3a7ca5;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* about.html card-title — same font style as other page titles */
+.cid-u8Sy9O893S .card-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  text-align: left;
 }
 
 /* features5 block — vw-based scaling for the whole section (ref: 1078px) */
@@ -598,10 +957,128 @@ h1 {
   padding-bottom: 8.9vw;
 }
 
-.cid-u8ZFTcl8ao h3.display-2 {
-  font-size: 4.45vw;
-  margin-bottom: 2.23vw;
+.cid-u9mOFp3EiY .mbr-section-title {
+  text-align: center;
+  width: 100%;
 }
+
+/* equip section — proportional scaling (ref: 1078px) */
+.cid-u9mOFp3EiY {
+  padding-top: 60px;
+  padding-bottom: 8.9vw;
+  overflow: hidden;
+}
+
+.cid-u9mOFp3EiY .container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 4.45vw;
+  padding-right: 4.45vw;
+  box-sizing: border-box;
+}
+
+/* equip grid — 3 columns, all cards same size */
+.cid-u9mOFp3EiY .row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 28vw));
+  gap: 1.86vw;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.cid-u9mOFp3EiY .column {
+  display: none;
+}
+
+.cid-u9mOFp3EiY .column.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.cid-u9mOFp3EiY .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c2dce3;
+  border-radius: 0.74vw;
+  padding: 1.86vw;
+  width: 28vw;
+  height: 26vw !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.cid-u9mOFp3EiY .content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80% !important;
+  overflow: hidden;
+}
+
+.cid-u9mOFp3EiY .img-equip {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+.cid-u9mOFp3EiY .content h2 {
+  font-size: 1.3vw !important;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 0.74vw;
+  margin-bottom: 0;
+}
+
+/* projects section — same proportional scaling as research.html */
+.cid-u9s2pGJ9pX {
+  padding-top: 54px;
+  padding-bottom: 8.9vw;
+  overflow: hidden;
+}
+
+.cid-u9s2pGJ9pX .container {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 4.45vw;
+  padding-right: 4.45vw;
+  box-sizing: border-box;
+}
+
+/* team section — same proportional scaling as research.html */
+.cid-u9ocYyZ7iZ {
+  padding-top: 8.9vw;
+  padding-bottom: 8.9vw;
+}
+
+
+#team-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+#team-inner {
+  width: 1400px;
+  transform-origin: top left;
+}
+
+.cid-u9ocYyZ7iZ .container {
+  max-width: 1400px;
+  width: 100%;
+  padding-left: 62px;
+  padding-right: 62px;
+  box-sizing: border-box;
+}
+
 
 /* Research cards — equal height, emboss hover, text contained */
 .cid-u8ZFTcl8ao .container > .row {
@@ -778,12 +1255,16 @@ h1 {
 }
 
 /* Egr (alumni) content */
+.content.egr .item-wrapper {
+  padding-top: 0.5rem !important;
+}
+
 .egr-content {
   padding: 1rem;
 }
 
 .egr-content h6 {
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.75rem;
 }
 

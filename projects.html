@@ -1,369 +1,210 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-    <!-- Site made with Mobirise Website Builder v5.9.17, https://mobirise.com -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v5.9.17, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/icons/lab-favicon-nobg-128x128.png" type="image/x-icon">
     <meta name="description" content="">
-
-
     <title>LABOGEO-UFES</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css?v=54" />
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=T4hhLS" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/news.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/projects.css">
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
-    </noscript>
-    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=baCFNO">
-    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=baCFNO" type="text/css">
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
-
-
+    <style>
+        #filterDropdownLabel { font-size: 2rem; flex: 1; text-align: center; }
+        #filterDropdownToggle { width: 21rem; }
+        #proj-grid h2.align-center.display-7 { margin-top: 1.5rem; }
+    </style>
 </head>
 
 <body>
 
-    <section data-bs-version="5.1" class="menu menu1 cid-u9oengHv9p" once="menu" id="menu1-4d">
-        <nav class="navbar navbar-dropdown navbar-expand-lg">
-          <div class="container-fluid container-navbar">
-            <div class="navbar-brand">
-              <span class="navbar-logo">
-                <a href="index.html">
-                  <img src="assets/images/icons/labogeo-logo.ico" alt="Página Inicial" style="height: 3rem;">
-                </a>
-              </span>
-    
-            </div>
-            <div class="collapse my-navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4 " href="about.html"
-                    data-translate="about_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="team.html"
-                    data-translate="team_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="research.html"
-                    data-translate="research_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary  display-4 active" href="projects.html"
-                    data-translate="projects_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4 " href="equip.html"
-                    data-translate="equip_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="papers.html"
-                    data-translate="papers_nav"></a></li>
-                <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="news.html"
-                    data-translate="news_nav"></a></li>
-              </ul>
-            </div>
-            <div class="action-buttons">
-              <button class="my-navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-                data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </button>
-              <div class="language">
-                <div class="language-selected">
-                  <span class="fi fi-br"></span>
-                </div>
-                <ul>
-                  <li>
-                    <a href="javascript:void(0);" class="br" onclick="setLanguage('projects', 'pt')">
-                      <span class="fi fi-br"></span> <span class="speech-pt">PT</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);" class="en" onclick="setLanguage('projects', 'en')">
-                      <span class="fi fi-us"></span> <span class="speech-en">EN</span>
-                    </a>
-                  </li>
+    <section class="menu menu1 cid-u9oengHv9p" id="menu1-4d">
+        <header class="my-custom-header">
+            <nav>
+              <a href="#home" id="logo">
+                <img src="assets/images/icons/labogeo-logo.png" alt="No features-image">
+              </a>
+              <ul id="nav-bar">
+                <li><a href="about.html" class="nav-link link text-white text-primary display-5 " data-translate="about_nav"></a></li>
+                <li><a href="team.html" class="nav-link link text-white text-primary display-5 " data-translate="team_nav"></a></li>
+                <li><a href="research.html" class="nav-link link text-white text-primary display-5 " data-translate="research_nav"></a></li>
+                <li><a href="projects.html" class="nav-link link text-white text-primary display-5 active " data-translate="projects_nav"></a></li>
+                <li><a href="equip.html" class="nav-link link text-white text-primary display-5" data-translate="equip_nav"></a></li>
+                <li><a href="papers.html" class="nav-link link text-white text-primary display-5  " data-translate="papers_nav"></a></li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+            <div class="language" onclick="openSelectLanguage()">
+                  <div class="language-selected"><span class="fi fi-br"></span></div>
+                  <ul id="list-language" >
+                    <li>
+                      <a href="javascript:void(0);" class="br" onclick="setLanguage('projects', 'pt')">
+                        <span class="fi fi-br"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="en" onclick="setLanguage('projects', 'en')">
+                        <span class="fi fi-gb"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              <i class="fas fa-bars" id="ham-menu"></i>
+              </nav>
+          </header>
     </section>
 
-    <section data-bs-version="5.1" class="image03 cid-u96n7kezWe" id="image04-2e">
+    <section class="image03 cid-u96n7kezWe" id="image04-2e">
 
 
         <div class="image-block m-auto">
-            <img src="assets/images/sections/projetos.webp" alt="" style="object-position: center 70% ; ">
+            <img src="assets/images/sections/projetos.webp" alt="" style="object-position: center 80% ; ">
 
         </div>
     </section>
 
-    <section data-bs-version="5.1" class="content4 cid-u9s2pGJ9pX " id="design-block-4v">    
-     
-  
-        <div class="container-fluid" >         
-            <div class="row justify-content-center"   style="width: 100% !important; padding-top: 90px;">
-                <div class="title col-md-12 col-lg-8">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong data-translate="title"></strong> </h3>
-                                                      
-                    <div class="row">
-                        <!--  <div class="col-3"> -->
-                        <div id="myBtnContainer">
-                            <button class="btn btn-filter-projects" onclick="filterSelection('ongoing')"
-                                data-translate="ongoing"></button>
-                            <button class="btn btn-filter-projects" onclick="filterSelection('terminated')"
-                                data-translate="terminated"></button>
-                        </div>
-                        <!--   </div> -->
-                        <div class="col">
-                            <!-- Portfolio Gallery Grid -->
-                            <div class="row">
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj1_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--   <p data-translate = "og_proj1_text"></p> -->
-                                            <p data-translate="og_proj1_time"></p>
-                                            <p data-translate="og_proj1_fund"></p>
-                                            <p data-translate="og_proj1_memb"></p>
-                                            <!-- <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj2_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--   <p data-translate = "og_proj1_text"></p> -->
-                                            <p data-translate="og_proj2_time"></p>
-                                            <p data-translate="og_proj2_fund"></p>
-                                            <p data-translate="og_proj2_memb"></p>
-                                            <!-- <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj3_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--   <p data-translate = "og_proj3_text"></p> -->
-                                            <p data-translate="og_proj3_time"></p>
-                                            <p data-translate="og_proj3_fund"></p>
-                                            <p data-translate="og_proj3_memb"></p>
-                                            <!--            <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj4_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!-- <p data-translate = "og_proj4_text"></p> -->
-                                            <p data-translate="og_proj4_time"></p>
-                                            <p data-translate="og_proj4_fund"></p>
-                                            <p data-translate="og_proj4_memb"></p>
-                                            <!--              <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj5_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!-- <p data-translate = "og_proj5_text"></p> -->
-                                            <p data-translate="og_proj5_time"></p>
-                                            <p data-translate="og_proj5_fund"></p>
-                                            <p data-translate="og_proj5_memb"></p>
-                                            <!-- <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column ongoing">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="og_proj6_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--  <p data-translate = "og_proj6_text"></p> -->
-                                            <p data-translate="og_proj6_time"></p>
-                                            <p data-translate="og_proj6_fund"></p>
-                                            <p data-translate="og_proj6_memb"></p>
-                                            <!-- <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but"></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj1_title"></strong> </h2>
-                                        <div class="proj_text">
-                                            <!--   <p data-translate = "end_proj1_text" ></p> -->
-                                            <p data-translate="end_proj1_time"></p>
-                                            <p data-translate="end_proj1_fund"></p>
-                                            <p data-translate="end_proj1_memb"></p>
-                                            <!--             <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj2_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--       <p data-translate = "end_proj2_text" ></p> -->
-                                            <p data-translate="end_proj2_time"></p>
-                                            <p data-translate="end_proj2_fund"></p>
-                                            <p data-translate="end_proj2_memb"></p>
-                                            <!--         <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj3_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--     <p data-translate = "end_proj3_text" ></p> -->
-                                            <p data-translate="end_proj3_time"></p>
-                                            <p data-translate="end_proj3_fund"></p>
-                                            <p data-translate="end_proj3_memb"></p>
-                                            <!--    <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj4_title"></strong> </h2>
-                                        <div class="proj_text">
-                                            <!--       <p data-translate = "end_proj4_text" ></p> -->
-                                            <p data-translate="end_proj4_time"></p>
-                                            <p data-translate="end_proj4_fund"></p>
-                                            <p data-translate="end_proj4_memb"></p>
-                                            <!--   <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4"  href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj5_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--     <p data-translate = "end_proj5_text" ></p> -->
-                                            <p data-translate="end_proj5_time"></p>
-                                            <p data-translate="end_proj5_fund"></p>
-                                            <p data-translate="end_proj5_memb"></p>
-                                            <!--   <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4"  href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column terminated">
-                                    <div class="content">
-                                        <h2 class="align-center display-7"><strong
-                                                data-translate="end_proj6_title"></strong></h2>
-                                        <div class="proj_text">
-                                            <!--     <p data-translate = "end_proj6_text" ></p> -->
-                                            <p data-translate="end_proj6_time"></p>
-                                            <p data-translate="end_proj6_fund"></p>
-                                            <p data-translate="end_proj6_memb"></p>
-                                            <!--   <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4"  href="" data-translate = "proj_but" ></a></div> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- END GRID -->
-                            </div>
-                        </div>
+    <section class="content4 cid-u9s2pGJ9pX " id="design-block-4v">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h3 class="align-center mb-4 display-2"><strong data-translate="title"></strong></h3>
+            </div>
+            <div class="col-12">
+                <div id="filterDropdownWrapper">
+                    <button class="btn" id="filterDropdownToggle" onclick="toggleFilterDropdown()">
+                        <span id="filterDropdownLabel" data-translate="ongoing"></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="myBtnContainer">
+                        <button class="btn btn-filter-projects active" onclick="filterSelection('ongoing')"
+                            data-translate="ongoing"></button>
+                        <button class="btn btn-filter-projects" onclick="filterSelection('terminated')"
+                            data-translate="terminated"></button>
                     </div>
                 </div>
+            </div>          
+            <!-- Portfolio Gallery Grid -->
+            <div id="proj-grid" class="row"></div>
+            <div id="proj-pagination">
+                <button id="proj-prev" onclick="changePage(-1)"><i class="fas fa-chevron-left"></i></button>
+                <span id="proj-page-info"></span>
+                <button id="proj-next" onclick="changePage(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
+            
         </div>
     
 
 
 
+        <script src="data/projects.js"></script>
         <script rel="text/javascript">
-            filterSelection("ongoing") // Execute the function and show all columns
+            const ITEMS_PER_PAGE = 6;
+            let currentFilter = "ongoing";
+            let currentPage = 1;
+
+            function openSelectLanguage() {
+                let ul = document.getElementById("list-language");
+                ul.classList.add("ls-lang");
+            }
+
+            function toggleFilterDropdown() {
+                const toggle = document.getElementById("filterDropdownToggle");
+                const container = document.getElementById("myBtnContainer");
+                toggle.classList.toggle("open");
+                container.classList.toggle("open");
+            }
+
             function filterSelection(c) {
-                let x, i;
-                x = document.getElementsByClassName("column");
-                let btns = document.getElementsByClassName("btn-filter-projects");
-                if (c == "terminated") {
-                    btns[1].classList.add("active");
-                    btns[0].classList.remove("active");
-                } else {
-                    btns[0].classList.add("active");
-                    btns[1].classList.remove("active");
-                }
+                currentFilter = c;
+                currentPage = 1;
 
-                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+                // Update active button
+                const btns = document.getElementsByClassName("btn-filter-projects");
+                for (let b of btns) b.classList.remove("active");
+                const target = c === "terminated" ? btns[1] : btns[0];
+                if (target) target.classList.add("active");
 
+                // Close dropdown and update label on mobile
+                const toggle = document.getElementById("filterDropdownToggle");
+                const container = document.getElementById("myBtnContainer");
+                if (toggle) toggle.classList.remove("open");
+                if (container) container.classList.remove("open");
+                const label = document.getElementById("filterDropdownLabel");
+                if (label && target) label.textContent = target.textContent;
 
-                for (i = 0; i < x.length; i++) {
-                    w3RemoveClass(x[i], "show");
-                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                }
+                renderPage();
             }
 
-            // Show filtered elements
-            function w3AddClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    if (arr1.indexOf(arr2[i]) == -1) {
-                        element.className += " " + arr2[i];
-                    }
-                }
+            function changePage(dir) {
+                const cols = Array.from(document.getElementsByClassName("column"))
+                    .filter(el => el.classList.contains(currentFilter));
+                const totalPages = Math.ceil(cols.length / ITEMS_PER_PAGE);
+                currentPage = Math.min(Math.max(currentPage + dir, 1), totalPages);
+                renderPage();
             }
 
-            // Hide elements that are not selected
-            function w3RemoveClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    while (arr1.indexOf(arr2[i]) > -1) {
-                        arr1.splice(arr1.indexOf(arr2[i]), 1);
-                    }
-                }
-                element.className = arr1.join(" ");
+            function renderPage() {
+                const cols = Array.from(document.getElementsByClassName("column"));
+                const filtered = cols.filter(el => el.classList.contains(currentFilter));
+                const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+                const start = (currentPage - 1) * ITEMS_PER_PAGE;
+                const end = start + ITEMS_PER_PAGE;
+
+                // Hide all, then show current page slice
+                cols.forEach(el => el.classList.remove("show"));
+                filtered.slice(start, end).forEach(el => el.classList.add("show"));
+
+                // Pagination controls
+                const pagination = document.getElementById("proj-pagination");
+                const prevBtn = document.getElementById("proj-prev");
+                const nextBtn = document.getElementById("proj-next");
+                const info = document.getElementById("proj-page-info");
+
+                pagination.style.display = totalPages > 1 ? "flex" : "none";
+                prevBtn.disabled = currentPage === 1;
+                nextBtn.disabled = currentPage === totalPages;
+                info.textContent = currentPage + " / " + totalPages;
             }
 
-            // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function () {
-                    var current = document.getElementsByClassName("btn-filter-projects active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
+            function renderProjects(lang) {
+                var grid = document.getElementById('proj-grid');
+                if (!grid) return;
+                var lbl = projectLabels[lang];
+                grid.innerHTML = projects.map(function(p) {
+                    var t = p[lang];
+                    return '<div class="column ' + p.status + '">' +
+                        '<div class="content">' +
+                        '<h2 class="align-center display-7"><strong>' + t.title + '</strong></h2>' +
+                        '<div class="proj_text">' +
+                        '<p><strong>' + lbl.time + '</strong> ' + t.time + '</p>' +
+                        '<p><strong>' + lbl.fund + '</strong> ' + t.fund + '</p>' +
+                        '<p><strong>' + lbl.memb + '</strong> ' + t.memb + '</p>' +
+                        '</div></div></div>';
+                }).join('');
+                filterSelection(currentFilter);
             }
+
+            function onLanguageChange(lang) { renderProjects(lang); }
+            renderProjects(localStorage.getItem('language') || 'pt');
         </script>
 
 
     </section>
 
-    <section data-bs-version="5.1" class="clients1 cid-u94O3jtBZj" id="clients1-1s">
+    <section class="clients1 cid-u94O3jtBZj" id="clients1-1s">
         <div class="container">
             <div class="mbr-section-head">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5">
+                <h3 class="mbr-section-title align-center mb-0 display-5">
                     <strong data-translate="partners"></strong>
                 </h3>
 
@@ -455,20 +296,15 @@
         </div>
     </section>
 
-    <section data-bs-version="5.1" class="social05 cid-u9oc5ojlLn" id="social05-4o">
+    <section class="social05 cid-u9oc5ojlLn" id="social05-4o">
 
         <div class="container">
             <div class="row">
-                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-5">
+                <h3 class="mbr-section-title align-center mb-5 display-5">
                     <strong data-translate="media_text"></strong>
                 </h3>
                 <div class="col-12">
                     <div class="social-row">
-                        <div class="soc-item">
-                            <a href="https://m.facebook.com/profile.php?id=61556030950445" target="_blank">
-                                <span class="mbr-iconfont socicon-facebook socicon"></span>
-                            </a>
-                        </div>
                         <div class="soc-item">
                             <a href="https://twitter.com/Labogeo1" target="_blank">
                                 <span class="mbr-iconfont  socicon"> <svg xmlns="http://www.w3.org/2000/svg" width="32"
@@ -484,7 +320,7 @@
                             </a>
                         </div>
                         <div class="soc-item">
-                            <a href="https://www.linkedin.com/in/labogeo-marine-geoscience-lab-9018032b3/?originalSubdomain=br"
+                            <a href="https://www.linkedin.com/in/labogeo-laborat%C3%B3rio-de-geoci%C3%AAncias-marinhas-ufes-80bbb1322/"
                                 target="_blank">
                                 <span class="mbr-iconfont socicon-linkedin socicon"></span>
                             </a>
@@ -495,19 +331,20 @@
         </div>
     </section>
 
-    <section data-bs-version="5.1" class="footer7 cid-u96n7lgbN7" once="footers" id="footer7-2i">
+    <section class="footer7 cid-u96n7lgbN7" id="footer7-2i">
         <div class="container">
             <div class="media-container-row align-center mbr-black">
                 <div class="col-12">
-                    <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    <p class="mbr-text mb-0 display-7">
                         LABOGEO - UFES</p>
                 </div>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/ytplayer/index.js"></script>
+
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="translations/translations.js"></script>

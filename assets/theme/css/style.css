@@ -23,8 +23,14 @@ section,
   word-wrap: break-word;
 }
 
-a.mbr-iconfont:hover {
+a.mbr-iconfont {
   text-decoration: none;
+}
+
+@media (hover: hover) {
+  a.mbr-iconfont:hover {
+    text-decoration: none;
+  }
 }
 
 .article .lead p,
@@ -40,8 +46,14 @@ a {
   font-weight: 400;
   cursor: pointer;
 }
-a, a:hover {
+a {
   text-decoration: none;
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .mbr-section-title {
@@ -297,9 +309,13 @@ iframe {
 
 .btn-form {
   margin: 0;
-}
-.btn-form:hover {
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .btn-form:hover {
+    cursor: pointer;
+  }
 }
 
 nav .mbr-section-btn {
@@ -389,8 +405,11 @@ nav .mbr-section-btn {
   cursor: pointer;
   text-align: center;
 }
-.mbr-arrow-up a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+
+@media (hover: hover) {
+  .mbr-arrow-up a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }
 .mbr-arrow-up a i {
   line-height: 60px;
@@ -687,10 +706,16 @@ input[type=range] {
   border-radius: 0.25rem;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:hover {
+.navbar-toggler:focus {
   text-decoration: none;
   box-shadow: none;
+}
+
+@media (hover: hover) {
+  .navbar-toggler:hover {
+    text-decoration: none;
+    box-shadow: none;
+  }
 }
 
 .navbar-toggler-icon {
@@ -963,7 +988,7 @@ blockquote {
 
 
 /* estilo do select de idioma */
-.language{
+/* .language{
   position: relative;
   width: 50px;
   font-weight: bold;  
@@ -1007,4 +1032,4 @@ blockquote {
 
 .language:hover ul{
   display: block;
-}
+} */

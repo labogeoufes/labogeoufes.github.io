@@ -1,103 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-  <!-- Site made with Mobirise Website Builder v5.9.17, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.17, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/icons/lab-favicon-nobg-128x128.png" type="image/x-icon">
   <meta name="description" content="">
-
-
   <title>LABOGEO-UFES</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/equip.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=53" />
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=T4hhLS" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap/css/news.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/equip.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
-  </noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=akLwIH">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=akLwIH" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+  <style>
+    #filterDropdownLabel { font-size: 2rem; flex: 1; text-align: center; }
+    #filterDropdownToggle { width: 21rem; }
+  </style>
 </head>
 
 <body>
 
-  <section data-bs-version="5.1" class="menu menu1 cid-u9oengHv9p" once="menu" id="menu1-4d">
+  <section class="menu menu1 cid-u9oengHv9p" id="menu1-4d">
 
-    <nav class="navbar navbar-dropdown navbar-expand-lg">
-      <div class="container-fluid container-navbar">
-        <div class="navbar-brand">
-          <span class="navbar-logo">
-            <a href="index.html">
-              <img src="assets/images/icons/labogeo-logo.ico" alt="Página Inicial" style="height: 3rem;">
-            </a>
-          </span>
-
-        </div>
-        <div class="collapse my-navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4 " href="about.html"
-                data-translate="about_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="team.html"
-                data-translate="team_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="research.html"
-                data-translate="research_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary  display-4" href="projects.html"
-                data-translate="projects_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4 active" href="equip.html"
-                data-translate="equip_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="papers.html"
-                data-translate="papers_nav"></a></li>
-            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="news.html"
-                data-translate="news_nav"></a></li>
-          </ul>
-        </div>
-        <div class="action-buttons">
-          <button class="my-navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-            data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-          <div class="language">
-            <div class="language-selected">
-              <span class="fi fi-br"></span>
-            </div>
-            <ul>
+    <header class="my-custom-header">
+      <nav>
+        <a href="#home" id="logo">
+          <img src="assets/images/icons/labogeo-logo.png" alt="No features-image">
+        </a>
+        <ul id="nav-bar">
+          <li><a href="about.html" class="nav-link link text-white text-primary display-5 " data-translate="about_nav"></a></li>
+          <li><a href="team.html" class="nav-link link text-white text-primary display-5 " data-translate="team_nav"></a></li>
+          <li><a href="research.html" class="nav-link link text-white text-primary display-5 " data-translate="research_nav"></a></li>
+          <li><a href="projects.html" class="nav-link link text-white text-primary display-5 " data-translate="projects_nav"></a></li>
+          <li><a href="equip.html" class="nav-link link text-white text-primary display-5 active" data-translate="equip_nav"></a></li>
+          <li><a href="papers.html" class="nav-link link text-white text-primary display-5 " data-translate="papers_nav"></a></li></ul>
+      <div class="language" onclick="openSelectLanguage()">
+            <div class="language-selected"><span class="fi fi-br"></span></div>
+            <ul id="list-language" >
               <li>
                 <a href="javascript:void(0);" class="br" onclick="setLanguage('equip', 'pt')">
-                  <span class="fi fi-br"></span> <span class="speech-pt">PT</span>
+                  <span class="fi fi-br"></span>
                 </a>
               </li>
               <li>
                 <a href="javascript:void(0);" class="en" onclick="setLanguage('equip', 'en')">
-                  <span class="fi fi-us"></span> <span class="speech-en">EN</span>
+                  <span class="fi fi-gb"></span>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </nav>
+              <i class="fas fa-bars" id="ham-menu"></i>
+        </nav>
+    </header>
   </section>
 
-  <section data-bs-version="5.1" class="image03 cid-u9mLrastGy" id="image04-33">
+  <section class="image03 cid-u9mLrastGy" id="image04-33">
 
 
     <div class="image-block m-auto">
@@ -106,176 +73,93 @@
     </div>
   </section>
 
-  <section data-bs-version="5.1" class="content4 cid-u9mOFp3EiY " id="design-block-3a">
+  <section class="content4 cid-u9mOFp3EiY " id="design-block-3a">
     <!-- mbr-fullscreen -->
-    <div class="container-fluid">
-      <div class="row justify-content-center" style="width: 100% !important; padding-top: 90px;">
-        <div class="title col-md-12 col-lg-8">
-          <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong
-              data-translate="title"></strong></h3>
-
-
-          <div id="myBtnContainer">
-
-            <button class="btn" id="din-mar" onclick="filterSelection('din-mar')" data-translate="din-mar"> </button>
-            <button class="btn" id="geo-mar" onclick="filterSelection('geo-mar')" data-translate="geo-mar"> </button>
-
-
-            <!-- Portfolio Gallery Grid -->
-            <div class="row">
-              <div class="column din-mar">
-                <div class="content ">
-                  <a href="equip_basic.html"> <img src="assets/images/icons/lab_icon.png" alt="NO IMAGE"
-                      class="img-equip"></a>
-                  <h2 class="align-center display-7"><strong data-translate="dinmar_equip01_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column din-mar">
-                <div class="content">
-                  <a href="equip_malvern.html"><img src="assets/images/equip/lab/malvern1.jpg" alt="NO IMAGE"
-                      class="img-equip"></a>
-                  <h2 class="align-center display-7"><strong data-translate="dinmar_equip02_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column din-mar">
-                <div class="content">
-                  <a href="equip_xrf.html"> <img src="assets/images/equip/lab/xrf2.jpg" alt="NO IMAGE"
-                      class="img-equip"></a>
-                  <h2 class="align-center display-7"><strong data-translate="dinmar_equip03_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_sampler.html"> <img src="assets/images/equip/campo/piscorer.png" alt="NO IMAGE"
-                      class="img-equip"></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip01_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_profiler.html"><img src="assets/images/equip/campo/adcpseaguard1.png" alt="NO IMAGE"
-                      class="img-equip"><img></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip02_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_sss.html"><img src="assets/images/equip/campo/edgetech1.png" alt="NO IMAGE"
-                      class="img-equip"><img></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip03_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_mbes.html"><img src="assets/images/equip/campo/r2sonic1.jpg" alt="NO IMAGE"
-                      class="img-equip"><img></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip04_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_dropcam.html"><img src="assets/images/equip/campo/dropcam1.jpeg" alt="NO IMAGE"
-                      class="img-equip"><img></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip05_title"></strong></h2>
-                </div>
-              </div>
-              <div class="column geo-mar">
-                <div class="content">
-                  <a href="equip_sbp.html"><img src="assets/images/equip/campo/boomer1.png" alt="NO IMAGE"
-                      class="img-equip"><img></a>
-                  <h2 class="align-center display-7"><strong data-translate="geomar_equip06_title"></strong></h2>
-                </div>
-              </div>
-
-              <!-- END GRID -->
-            </div>
-          </div>
+    <div class="container">     
+      <div class="col-12 text-center">
+          <h3 class="align-centar mb-4 display-2">
+            <strong
+              data-translate="title">
+            </strong>
+          </h3>
+      </div>
+      <div id="filterDropdownWrapper">
+        <button class="btn" id="filterDropdownToggle" onclick="toggleFilterDropdown()">
+          <span id="filterDropdownLabel" data-translate="din-mar"></span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="myBtnContainer">
+          <button class="btn btn-filter-projects active" id="din-mar" onclick="filterSelection('din-mar')" data-translate="din-mar"></button>
+          <button class="btn btn-filter-projects" id="geo-mar" onclick="filterSelection('geo-mar')" data-translate="geo-mar"></button>
         </div>
       </div>
+
+        <!-- Equipment grid rendered by data/equipment.js -->
+        <div id="equip-grid" class="row"></div>
+      </div>
+      </div>
+       
+      
     </div>
 
-    <script rel="text/javascript">
-      function showNavbar() {
-        let navbar = document.getElementById("navbarSupportedContent");
-        console.log(navbar)
-        console.log("antes:", navbar.style)
-        // debugger
-        if (navbar.style.display == "flex") {
-          navbar.style.display = "none"
-        }
-        else {
-          navbar.style.display = "flex"
-        }
-        console.log("depois:", navbar)
-        console.log("depois:", navbar.style)
+    <script src="data/equipment.js"></script>
+    <script>
+      function toggleFilterDropdown() {
+        const toggle = document.getElementById("filterDropdownToggle");
+        const container = document.getElementById("myBtnContainer");
+        toggle.classList.toggle("open");
+        container.classList.toggle("open");
       }
 
-      // Função que será chamada quando o tamanho da tela mudar
-      function onResize() {
-        var larguraTela = window.innerWidth;
-        var alturaTela = window.innerHeight;
-        console.log(larguraTela)
-        console.log("largura2:", window.screen.width)
-        // let imgs = document.querySelectorAll(".img-equip")
-        // if (window.innerWidth < 500) {
-        //   imgs.forEach(item => {
-        //     item.classList.add("fixed-height")
-        //   })
-        // }
-        // else {
-        //   imgs.forEach(item => {
-        //     item.classList.remove("fixed-height")
-        //   })
-        // }
-      }
-
-      // Adiciona um listener para o evento de redimensionamento
-      window.addEventListener("resize", onResize);
-
-
-
-      filterSelection("din-mar")
       function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("column");
-
-        // if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-        // Add active class to the current control button (highlight it)       
-        let btns = document.getElementsByClassName("btn");
-
-        for (let i = 0; i < btns.length; i++) {
-          btns[i].classList.remove("active")
-          if (btns[i].id == c) {
-            btns[i].classList.add("active")
+        var x = document.getElementsByClassName("column");
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.add("hide");
+          x[i].classList.remove("show");
+          if (x[i].className.indexOf(c) > -1) {
+            x[i].classList.add("show");
+            x[i].classList.remove("hide");
           }
         }
-      }
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        element.classList.add("show")
-        element.classList.remove("hide")
+        var btns = document.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.remove("active");
+          if (btns[i].id === c) btns[i].classList.add("active");
+        }
+        var activeBtn = document.getElementById(c);
+        var label = document.getElementById("filterDropdownLabel");
+        if (activeBtn && label) label.textContent = activeBtn.textContent;
+        document.getElementById("filterDropdownToggle").classList.remove("open");
+        document.getElementById("myBtnContainer").classList.remove("open");
       }
 
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
+      function renderEquipment(lang) {
+        var grid = document.getElementById("equip-grid");
+        if (!grid) return;
+        var activeBtn = document.querySelector('#myBtnContainer .btn.active');
+        var currentFilter = activeBtn ? activeBtn.id : 'din-mar';
+        grid.innerHTML = equipment.map(function(e) {
+          return '<div class="column ' + e.category + '">' +
+            '<div class="content">' +
+            '<a href="' + e.link + '"><img src="' + e.img + '" alt="' + e[lang] + '" class="img-equip"></a>' +
+            '<h2 class="align-center display-7"><strong>' + e[lang] + '</strong></h2>' +
+            '</div></div>';
+        }).join('');
+        filterSelection(currentFilter);
+      }
 
-        element.classList.add("hide")
-        element.classList.remove("show")
-      }     
+      function onLanguageChange(lang) { renderEquipment(lang); }
+
+      renderEquipment(localStorage.getItem('language') || 'pt');
     </script>
 
   </section>
 
-  <section data-bs-version="5.1" class="clients1 cid-u94O3jtBZj" id="clients1-1s">
+  <section class="clients1 cid-u94O3jtBZj" id="clients1-1s">
 
     <div class="container">
       <div class="mbr-section-head">
-        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5">
+        <h3 class="mbr-section-title align-center mb-0 display-5">
           <strong data-translate="partners"></strong>
         </h3>
         <div class="slider">
@@ -347,20 +231,15 @@
   </section>
 
 
-  <section data-bs-version="5.1" class="social05 cid-u9oc5ojlLn" id="social05-4o">
+  <section class="social05 cid-u9oc5ojlLn" id="social05-4o">
 
     <div class="container">
       <div class="row">
-        <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-5">
+        <h3 class="mbr-section-title align-center mb-5 display-5">
           <strong data-translate="media_text"></strong>
         </h3>
         <div class="col-12">
           <div class="social-row">
-            <div class="soc-item">
-              <a href="https://m.facebook.com/profile.php?id=61556030950445" target="_blank">
-                <span class="mbr-iconfont socicon-facebook socicon"></span>
-              </a>
-            </div>
             <div class="soc-item">
               <a href="https://twitter.com/Labogeo1" target="_blank">
                 <span class="mbr-iconfont  socicon"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
@@ -376,7 +255,7 @@
               </a>
             </div>
             <div class="soc-item">
-              <a href="https://www.linkedin.com/in/labogeo-marine-geoscience-lab-9018032b3/?originalSubdomain=br"
+              <a href="https://www.linkedin.com/in/labogeo-laborat%C3%B3rio-de-geoci%C3%AAncias-marinhas-ufes-80bbb1322/"
                 target="_blank">
                 <span class="mbr-iconfont socicon-linkedin socicon"></span>
               </a>
@@ -387,19 +266,20 @@
     </div>
   </section>
 
-  <section data-bs-version="5.1" class="footer7 cid-u9mLrbBNka" once="footers" id="footer7-37">
+  <section class="footer7 cid-u9mLrbBNka" id="footer7-37">
     <div class="container">
       <div class="media-container-row align-center mbr-black">
         <div class="col-12">
-          <p class="mbr-text mb-0 mbr-fonts-style display-7">
+          <p class="mbr-text mb-0 display-7">
             LABOGEO - UFES</p>
         </div>
       </div>
     </div>
   </section>
+  <script src="script.js"></script>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/index.js"></script>
+
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="translations/translations.js"></script>
