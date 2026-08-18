@@ -182,15 +182,15 @@ const members = [
   },
 
   {
-    category: 'disc', photo: 'assets/images/team/he.jpg', email: null,
+    category: 'disc', photo: 'assets/images/team/daniel_barcelos.jpg', email: null,
     pt: {
       name: 'Daniel Ferreira Barcelos', title: 'Pesquisador - Seascape Wind (Fase I)\nMestrando em Oceanografia Ambiental (UFES)',
-      bio: '',
+      bio: 'Daniel está atualmente cursando o Mestrado em Oceanografia Ambiental na Universidade Federal do Espírito Santo (UFES). Ele possui experiência em levantamentos hidrográficos de campo. \nSua pesquisa de pós-graduação concentra-se no processamento e na análise de dados de ADCP para investigar processos hidrodinâmicos e a dinâmica sedimentar em ambientes recifais.',
       degrees: ['Sc.B. em Oceanografia, Universidade Federal do Espírito Santo (2023)']
     },
     en: {
       name: 'Daniel Ferreira Barcelos', title: 'Graduate Researcher - Seascape Wind (Phase I)\nMaster\'s Student in Environmental Oceanography (UFES)',
-      bio: '',
+      bio: 'Daniel is currently pursuing a Master’s degree in Environmental Oceanography at the Federal University of Espírito Santo (UFES). \nHe has experience in hydrographic field surveys. His graduate research focuses on processing and analyzing ADCP data to investigate hydrodynamic processes and sediment dynamics in reef environments.',
       degrees: ['B.Sc. in Oceanography, Universidade Federal do Espírito Santo (2023)']
     }
   },
