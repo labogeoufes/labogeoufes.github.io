@@ -18,13 +18,20 @@
   <link rel="stylesheet" href="assets/bootstrap/css/news.css">
   <link rel="stylesheet" href="assets/bootstrap/css/papers.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <style>
     .yr { font-size: 40px; }
+    a.paper-link {
+      color: #82ead5 !important;
+      text-decoration: none;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+    }
+    a.paper-link:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px rgba(130, 234, 213, 0.7);
+    }
   </style>
 </head>
 
@@ -103,9 +110,9 @@
               '</div>' +
               '<div class="col-lg-6 col-md-12" id="titlePapers">' +
               '<h5 class="display-5"><strong>' + p.title + '</strong></h5>' +
-              '<p class="mt-5 mb-5">' + p.authors + '</p>' +
-              '<p class="mt-5 mb-5"><em>' + p.journal + '</em></p>' +
-              '<a href="' + p.link + '" target="_blank" class="display-7 mbr-black"><em>' + btnLabel + '</em></a>' +
+              '<p class="display-7 mt-5 mb-5">' + p.authors + '</p>' +
+              '<p class="display-7 mt-5 mb-5"><em>' + p.journal + '</em></p>' +
+              '<a href="' + p.link + '" target="_blank" class="display-7 paper-link"><em>' + btnLabel + '</em></a>' +
               '</div></div></div>';
           }).join('');
 
